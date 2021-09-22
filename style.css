@@ -8,13 +8,20 @@
     display: flex;
 }
 
-/* *****HEADER_SITE****** */
+:clearfix::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+
+/* *****regole generali****** */
 header{
     background-color: rgba(222, 222, 222, 1);
     width: 100%;
     border-top-left-radius: 42px;
     border-top-right-radius: 42px;
 }
+
 .top{
     width: 60%;
     justify-content: space-between;
@@ -28,7 +35,7 @@ header{
 
 
 .top-center input{
-    background-color: -internal-light-dark(lightgray), white solid 3px}
+    background-color: -internal-light-dark(lightgray), red solid 3px}
 
 
 
@@ -45,5 +52,54 @@ header{
     border-radius: 50%;
     width: 30px;
     height: 30px;
-    justify-content: ;
 }
+/* ****container top********* */
+
+.container_top{
+    width: 100%;
+    flex-direction: column;
+}
+.icon_speakerview{
+    flex-direction: row;
+    background-color: ;
+}
+.top_side{
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: right;
+    background-color: azure;
+    padding: 15px;    padding: 15px;
+}
+.icon_fullscreen, .icon_speakerview {
+    background-color: grey;
+    color: white;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+/* *****left side and right_side****** */
+
+.left_side, .right_side {
+    width: 100px;
+    height: 950px;
+    background-color: red;
+}
+
+
+.left_side .icon_arrow_left> i, .right_side .icon_arrow_right> i{
+    position:relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 4rem;
+}
+
+.col_10{
+    float: left;
+}
+
+
+
+/* *****parte centrale****** */
