@@ -31,7 +31,9 @@ header, main, footer{
 
 .container-web-app{
     height: 100vh;
-    background-color: aquamarine;    
+    background-color: aquamarine;  
+    display: flex;
+    flex-direction: column;  
 }
 /* __MAIN TAG_________________ */
 
@@ -79,4 +81,20 @@ footer{
     align-items: center;
     margin:0 20px;
 }
-/*  */
+
+/* header{
+    height: 5%;
+}
+main{
+    height: 90%;
+}
+footer{
+    height: 5%;
+} */
+
+
+
+/* _____MAIN_______________________________ */
+main{
+    flex-grow: 2;
+}
