@@ -4,13 +4,79 @@
     padding: 0;
     margin: 0;
 }
+/* ____RULES________________________ */
+.flex{
+    display: flex;
+}
 
 
+/* ___DEBUG RULES_______________ */
+header, main, footer{
+    border: 2px dashed blue;
+}
 
+.bg-pink{
+    background-color: pink;
+}
+.bg-burlywood{
+    background-color: burlywood;
+}
+.bg-green{
+    background-color: greenyellow;
+}
+.bg-blueviolet{
+    background-color:blueviolet;
+}
 /* ___BOX____________ */
 
 .container-web-app{
     height: 100vh;
-    background-color: aquamarine;
+    background-color: aquamarine;    
+}
+/* __MAIN TAG_________________ */
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+/* ____GENERAL CLASS
+___________________ */
+.short{
+    width: 10%;
+    align-items: center;
+    justify-content: space-around;
+}
+.grid{
+    margin-right: 9px;
+}
+.speaker{
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    height: calc(100%/9);
+    background-color: orange;
+    border: 2px solid black;
+}
+.card img{
+    width: 100%;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.left-footer, .central-footer, .right-footer{
+    align-items: center;
     
 }
+.icon-up{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin:0 20px;
+}
+/*  */
