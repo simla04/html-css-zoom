@@ -4,18 +4,22 @@
     padding: 0;
     margin: 0;
 }
+
 /* ____RULES________________________ */
 .flex{
     display: flex;
 }
-
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 8px;
+}
 
 /* ___DEBUG RULES_______________ */
 header, main, footer{
-    border: 2px dashed blue;
+    /* border: 2px dashed blue; */
 }
 
-.bg-pink{
+/* .bg-pink{
     background-color: pink;
 }
 .bg-burlywood{
@@ -26,12 +30,12 @@ header, main, footer{
 }
 .bg-blueviolet{
     background-color:blueviolet;
-}
+} */
 /* ___BOX____________ */
 
 .container-web-app{
     height: 100vh;
-    background-color: aquamarine;  
+    /* background-color: aquamarine;   */
     display: flex;
     flex-direction: column;  
 }
@@ -41,13 +45,24 @@ header{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    background-color: black;
+    padding: 6px;
 }
 /* ____GENERAL CLASS
 ___________________ */
+.short .speaker-view, .short .extend{
+    background-color: rgba(74, 74, 74, 1);
+    padding: 6px;
+    border-radius: 4%;
+}
+
 .short{
-    width: 10%;
+    width: 9%;
     align-items: center;
     justify-content: space-around;
+    color: white;
+    font-size: 15px;
+    
 }
 .grid{
     margin-right: 9px;
@@ -56,22 +71,16 @@ ___________________ */
     align-items: center;
 }
 
-.card{
-    display: flex;
-    height: calc(100%/9);
-    background-color: orange;
-    border: 2px solid black;
-}
-.card img{
-    width: 100%;
-}
 footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: rgba(34, 34, 34, 1);
+    /* padding-top: 18px; */
 }
 .left-footer, .central-footer, .right-footer{
     align-items: center;
+    padding: 11px;
     
 }
 .icon-up{
@@ -79,7 +88,13 @@ footer{
     flex-direction: column;
     align-content: center;
     align-items: center;
-    margin:0 20px;
+    margin: 0 20px;
+    color: white;
+    padding-top: 13px;
+    font-size: 17px;
+}
+.icon-up i{
+    font-size: 31px;
 }
 
 /* header{
@@ -96,5 +111,50 @@ footer{
 
 /* _____MAIN_______________________________ */
 main{
+    display: flex;
     flex-grow: 2;
+    flex-wrap: wrap;
+    padding: 23px 5rem;
+    background-color: black;
+}
+.card{
+    width: calc(100%/7);
+    padding: 3px;
+    /* height: calc(100%/4); */
+}
+.card{
+    display: flex;
+    /* background-color: orange; */
+    /* border: 2px solid black; */
+}
+.card img{
+    width: 100%;
+}
+.up{
+    font-size: 8px;
+    color: white;
+}
+footer{
+    
+    
+}
+.right-footer{
+    background-color: rgba(74, 74, 74, 1);
+    color: rgba(187, 37, 42, 1);
+    font-size: 17px;
+    flex-grow: 0;
+    padding: 21px;
+    font-weight: bold;
+}
+.share-screen i{
+    color: rgba(67, 176, 6, 1);
+}
+
+
+
+.left-footer{
+flex-grow: 1;
+}
+.central-footer{
+flex-grow: 2;
 }
